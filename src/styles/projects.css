@@ -1,0 +1,83 @@
+.projects-container {
+  padding: 2rem;
+  background-color: #f0f0f0;
+  color: #393838;
+}
+
+.projects-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.project1 {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.project1 h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project1 p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.screenshots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.screenshots img {
+  width: 35%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.links {
+  margin-bottom: 1.5rem;
+}
+
+.links a {
+  display: inline-block;
+  color: #002244;
+  background-color: #d3d3d3;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.links a:hover {
+  background-color: #add8e6;
+}
+
+.tools-used {
+  background-color: #002244;
+  color: #d3d3d3;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.tools-used h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.tools-used ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.tools-used li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
