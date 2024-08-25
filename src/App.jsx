@@ -8,7 +8,7 @@ import Contact from "./pages/contact";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/My-portfolio/">
       <div className="app">
         <Header />
         <Routes>
