@@ -8,14 +8,14 @@ import Contact from "./pages/contact";
 
 function App() {
   return (
-    <Router basename="https://eservetti.github.io/My-portfolio">
+    <Router>
       <div className="app">
         <Header />
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/projects" element={<Projects/>}/>
-          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/contact" element={<Contact/>}></Route>
         </Routes>
       </div>
     </Router>
