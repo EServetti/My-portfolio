@@ -15,7 +15,7 @@ const Projects = () => {
     <div className="projects-container">
       <h1>My Projects</h1>
 
-      <div className="project1">
+      <div className="project">
         <h2>Everithing for your home</h2>
         <p>
           This is my first project, created during the Coderhouse course on
@@ -66,7 +66,7 @@ const Projects = () => {
           </ul>
         </div>
       </div>
-      <div className="project2">
+      <div className="project">
         <h2>Find your books</h2>
         <p>
           My second project: Have you ever wanted to read about something but
