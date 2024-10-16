@@ -43,13 +43,6 @@ const Projects = () => {
           >
             GitHub (Back-end)
           </a>
-          <a
-            href="https://everithingforyourhome.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Project
-          </a>
         </div>
         <div className="tools-used">
           <h3>Tools Used:</h3>
