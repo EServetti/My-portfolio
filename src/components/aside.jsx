@@ -12,6 +12,9 @@ function Aside() {
             <Link to="/education">Education</Link>
           </li>
           <li>
+            <Link to="/skills">Skills and tools</Link>
+          </li>
+          <li>
             <Link to="/projects">Projects</Link>
           </li>
           <li>

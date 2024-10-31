@@ -1,0 +1,28 @@
+.main-skills {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skills-tools {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: #002244;
+    color: #d3d3d3;
+    border-right: 2px solid #d3d3d3;
+    padding: 15px;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.skills-tools h3 {
+    width: 100%;
+    border-bottom: 2px solid #d3d3d3;
+}
