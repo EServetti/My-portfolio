@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/contact.css";
 import githubLogo from "../assets/git-hub.png";
 import gmailLogo from "../assets/gmail-logo.png";
+import linkedinLogo from "../assets/linkedin.png"
 
 const Contact = () => {
   return (
@@ -25,6 +26,11 @@ const Contact = () => {
           <li>
             <a href="mailto:servettiemilio1@gmail.com?subject=Contact%20from%20Portfolio">
               <img src={gmailLogo} alt="Gmail" className="contact-logo" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/emilio-servetti-programming/">
+              <img src={linkedinLogo} alt="Gmail" className="contact-logo" />
             </a>
           </li>
         </ul>

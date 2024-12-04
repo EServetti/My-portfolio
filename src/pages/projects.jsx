@@ -1,120 +1,94 @@
 import React from "react";
 import "../styles/projects.css";
+import whiteArrow from "../assets/white-arrow.png";
 import screenshot1 from "../assets/project-screenshot1.jpg";
 import screenshot2 from "../assets/project-screenshot2.jpg";
 import screenshot3 from "../assets/project-screenshot3.jpg";
 import screenshot4 from "../assets/project-screenshot4.jpg";
-import screenshot5 from "../assets/screenshot5.jpg"
-import screenshot6 from "../assets/screenshot6.jpg"
-import screenshot7 from "../assets/screenshot7.jpg"
-import screenshot8 from "../assets/screenshot8.jpg"
-
+import screenshot5 from "../assets/screenshot5.jpg";
+import screenshot6 from "../assets/screenshot6.jpg";
+import screenshot7 from "../assets/screenshot7.jpg";
+import screenshot8 from "../assets/screenshot8.jpg";
+import screenshot9 from "../assets/home_new.jpg"
+import screenshot10 from "../assets/plan.jpg"
+import Project from "../components/project";
 
 const Projects = () => {
   return (
-    <div className="projects-container">
-      <h1>My Projects</h1>
-
-      <div className="project">
-        <h2>Everithing for your home</h2>
-        <p>
-          This is my first project, created during the Coderhouse course on
+    <div style={{ display: "flex", flexDirection: "column" }}>
+      <section className="index">
+        <a href="#efyh">
+          <img src={whiteArrow} alt="arrow" />
+          Everithing for your home
+        </a>
+        <a href="#fyb">
+          <img src={whiteArrow} alt="arrow" />
+          Find your books
+        </a>
+        <a href="#AIT">
+          <img src={whiteArrow} alt="arrow" />
+          AITrainer
+        </a>
+      </section>
+      <div className="projects-container">
+        <Project
+          id="efyh"
+          title="Everithing for your home"
+          description="This is my first project, created during the Coderhouse course on
           Backend Development. I used Node.js along with other tools (specified
-          below) for the server, and React for the front-end.
-        </p>
-        <div className="screenshots">
-          <img src={screenshot1} alt="Screenshot 1" />
-          <img src={screenshot2} alt="Screenshot 2" />
-          <img src={screenshot3} alt="Screenshot 3" />
-          <img src={screenshot4} alt="Screenshot 4" />
-        </div>
-        <div className="links">
-          <a
-            href="https://github.com/EServetti/server-front"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub (Front-end)
-          </a>
-          <a
-            href="https://github.com/EServetti/server"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub (Back-end)
-          </a>
-          <a
-            href="https://everithingforyourhome.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Project
-          </a>
-        </div>
-        <div className="tools-used">
-          <h3>Tools Used:</h3>
-          <ul>
-            <li>Node.js with Express</li>
-            <li>Database Management with MongoDB (NoSQL)</li>
-            <li>JWT and the Cookie Parser</li>
-            <li>Nodemailer</li>
-            <li>
-              Other Middlewares like Winston, Hashing with bcrypt, Documentation
-              with Swagger, etc.
-            </li>
-            <li>React for the Frontend</li>
-          </ul>
-        </div>
-      </div>
-      <div className="project">
-        <h2>Find your books</h2>
-        <p>
-          My second project: Have you ever wanted to read about something but
-          didn’t know which book could fit those characteristics? This is "Find
-          Your Books," a page where you enter a description of a book, and it
-          gives you a list of books that match the description.
-        </p>
-        <div className="screenshots">
-          <img src={screenshot5} alt="Screenshot 5" />
-          <img src={screenshot6} alt="Screenshot 6" />
-          <img src={screenshot7} alt="Screenshot 7" />
-          <img src={screenshot8} alt="Screenshot 8" />
-        </div>
-        <div className="links">
-          <a
-            href="https://github.com/EServetti/Find-my-books-front"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub (Front-end)
-          </a>
-          <a
-            href="https://github.com/EServetti/Find-my-books"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub (Back-end)
-          </a>
-          <a
-            href="https://find-your-books.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Live Project
-          </a>
-        </div>
-        <div className="tools-used">
-          <h3>Tools Used:</h3>
-          <ul>
-            <li>Node.js with Express</li>
-            <li>Database Management with MongoDB (NoSQL)</li>
-            <li>Open AI API</li>
-            <li>Google books API</li>
-            <li>JWT and the Cookie Parser</li>
-            <li>Nodemailer</li>
-            <li>React for the Frontend</li>
-          </ul>
-        </div>
+          below) for the server, and React for the front-end."
+          screenshot1={screenshot1}
+          screenshot2={screenshot2}
+          screenshot3={screenshot3}
+          screenshot4={screenshot4}
+          linkFront="https://github.com/EServetti/server-front"
+          linkBack="https://github.com/EServetti/server"
+          toolsUsed={[
+            "Node.js with Express",
+            "Database Management with MongoDB (NoSQL)",
+            "JWT and the Cookie Parser",
+            "Nodemailer",
+            "Other Middlewares like Winston, Hashing with bcrypt, Documentation with Swagger, etc.",
+            "React for the Frontend",
+          ]}
+        />
+        <Project
+          id="fyb"
+          title="Find your books"
+          description="My second project: Have you ever wanted to read about something but
+          didn’t know which book could fit those characteristics? This is Find
+          Your Books, a page where you enter a description of a book, and it
+          gives you a list of books that match the description."
+          screenshot1={screenshot5}
+          screenshot2={screenshot6}
+          screenshot3={screenshot7}
+          screenshot4={screenshot8}
+          linkFront="https://github.com/EServetti/Find-my-books-front"
+          linkBack="https://github.com/EServetti/Find-my-books"
+          linkLive="https://find-your-books.vercel.app"
+          toolsUsed={[
+            "Node.js with Express",
+            "Database Management with MongoDB (NoSQL)",
+            "Open AI API",
+            "Google books API",
+            "JWT and the Cookie Parser",
+            "Nodemailer",
+            "React for the Frontend",
+          ]}
+        />
+        <Project
+          id="AIT"
+          title="AITrainer"
+          description="My first project with TypeScript both in front and back end. AITrainer is a virtual trainer that will give you a personalized training plan, in this project I have used artificial intelligence with the Open AI API."
+          screenshot1={screenshot9}
+          screenshot2={screenshot10}
+          linkFront="https://github.com/EServetti/AITrainer_front"
+          linkBack="https://github.com/EServetti/AITrainer"
+          linkLive="https://ai-trainer-app.vercel.app/"
+          toolsUsed={[
+            "TypeScript","Node.js & Express","React","Open AI API"
+          ]}
+        />
       </div>
     </div>
   );

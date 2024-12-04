@@ -12,6 +12,7 @@
   background-color: #002244; 
   color: #d3d3d3; 
   border-radius: 8px;
+  gap: 15px;
 }
 
 .hero h1 {
@@ -19,10 +20,28 @@
   margin-bottom: 1rem;
 }
 
-.hero p {
+.hero span {
+  width: 50%;
+  min-width: 500px;
+  display: flex;
+  align-items: center;
   font-size: 1.2rem;
   padding: 0 10px;
   text-align: center; 
+  padding: 10px;
+}
+
+.personal-photo {
+  width: 20%;
+  min-width: 120px;
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+.hero p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .hero p a {
@@ -38,6 +57,7 @@
 .tech-logos {
   height: auto;
   width: 50%;
+  min-width: fit-content;
   display: flex;
   justify-content: center;
   gap: 2rem;

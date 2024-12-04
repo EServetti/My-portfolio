@@ -1,4 +1,5 @@
 .header {
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,39 +8,8 @@
   color: #393838;
 }
 
-.logo {
+.portfolio-title {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.navbar {
-  background-color: #00050a; 
-  border-radius: 5px; 
-  padding: 1rem; 
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar li {
-  margin: 0;
-}
-
-.navbar a {
-    color: #D3D3D3; 
-    text-decoration: none;
-    padding: 0.75rem 1.5rem; 
-    font-weight: bold;
-    font-size: 1.1rem; 
-  }
-
-.navbar a:hover {
-  color: #add8e6;
-  background-color: #002244;
-  border-radius: 3px;
-}

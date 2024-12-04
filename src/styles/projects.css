@@ -43,6 +43,8 @@
 
 .links {
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .links a {
