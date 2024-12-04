@@ -16,10 +16,10 @@ function Project({
       <h2>{title}</h2>
       <p>{description}</p>
       <div className="screenshots">
-        <img src={screenshot1} alt="Screenshot 1" />
-        <img src={screenshot2} alt="Screenshot 2" />
-        <img src={screenshot3} alt="Screenshot 3" />
-        <img src={screenshot4} alt="Screenshot 4" />
+        {screenshot1 && <img src={screenshot1} alt="Screenshot 1" />}
+        {screenshot2 && <img src={screenshot2} alt="Screenshot 1" />}
+        {screenshot3 && <img src={screenshot3} alt="Screenshot 1" />}
+        {screenshot4 && <img src={screenshot4} alt="Screenshot 1" />}
       </div>
       <div className="links">
         {linkFront && (

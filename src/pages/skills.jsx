@@ -32,6 +32,7 @@ function Skills() {
         <span>✅JWT</span>
         <span>✅Cookie parser</span>
         <span>✅Node mailer</span>
+        <span>✅TypeScript</span>
       </section>
     </div>
   );
