@@ -10,7 +10,7 @@ import Skills from "./pages/skills";
 
 function App() {
   return (
-    <Router basename="/My-portfolio/">
+    <Router>
       <Header />
       <div className="app">
         <Aside/>
