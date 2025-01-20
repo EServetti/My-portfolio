@@ -33,6 +33,7 @@ function Skills() {
         <span>✅Cookie parser</span>
         <span>✅Node mailer</span>
         <span>✅TypeScript</span>
+        <span>✅SQL</span>
       </section>
     </div>
   );
