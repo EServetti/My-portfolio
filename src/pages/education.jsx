@@ -6,6 +6,7 @@ import utnLogo from "../assets/utn-logo.png"
 import utnDiploma from "../assets/utn-diploma.jpg"
 import coderhouseLogo from "../assets/coderhouse-logo.png"
 import coderhouseDiploma from "../assets/coderhouse-diploma.png"
+import sqlDiploma from "../assets/73e70169-d190-46af-9a89-409da26ecc89.png"
 
 const Education = () => {
   return (
@@ -67,6 +68,19 @@ const Education = () => {
       finishedIn="08/2024"
       diploma={coderhouseDiploma}
       linkDiploma="https://www.coderhouse.com/ar/certificados/66c1eefeb45e2e10098434b0?lang="
+      />
+      <EducationInfo
+      title="SQL at Coderhouse"
+      logo={coderhouseLogo}
+      description="In this course you will learn the core concepts of relational databases, which are implemented by all organizations to make decisions based on the information they generate in their business model. You will create a relational database from scratch, starting with the generation of the structure to the insertion of the information, and implementing automation processes for the maintenance of the database. You will implement advanced SQL queries to generate reports and reports for decision making. At the end of the course you will be ready to analyze databases and information from any business model."
+      link="https://www.coderhouse.com/ar/online/sql"
+      location="Remote."
+      duration="24 hours."
+      state="Finished"
+      startedIn="10/2024"
+      finishedIn="01/2025"
+      diploma={sqlDiploma}
+      linkDiploma="https://pub.coderhouse.com/certificates/73e70169-d190-46af-9a89-409da26ecc89?v=1"
       />
     </div>
   );
