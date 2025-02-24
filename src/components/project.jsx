@@ -10,12 +10,13 @@ function Project({
   linkFront,
   linkLive,
   toolsUsed,
+  verticalImgs
 }) {
   return (
     <div className="project" id={id}>
       <h2>{title}</h2>
       <p>{description}</p>
-      <div className="screenshots">
+      <div className={!verticalImgs ? "screenshots" : "screenshots-vertical"}>
         {screenshot1 && <img src={screenshot1} alt="Screenshot 1" />}
         {screenshot2 && <img src={screenshot2} alt="Screenshot 1" />}
         {screenshot3 && <img src={screenshot3} alt="Screenshot 1" />}
