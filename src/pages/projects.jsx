@@ -11,6 +11,9 @@ import screenshot7 from "../assets/screenshot7.jpg";
 import screenshot8 from "../assets/screenshot8.jpg";
 import screenshot9 from "../assets/home_new.jpg"
 import screenshot10 from "../assets/plan.jpg"
+import screenshot11 from "../assets/screenshot11.png"
+import screenshot12 from "../assets/screenshot12.png"
+import screenshot13 from "../assets/screenshot13.png"
 import Project from "../components/project";
 
 const Projects = () => {
@@ -28,6 +31,10 @@ const Projects = () => {
         <a href="#AIT">
           <img src={whiteArrow} alt="arrow" />
           AITrainer
+        </a>
+        <a href="#MF">
+          <img src={whiteArrow} alt="arrow" />
+          My Flicks
         </a>
       </section>
       <div className="projects-container">
@@ -88,6 +95,17 @@ const Projects = () => {
           toolsUsed={[
             "TypeScript","Node.js & Express","React","Open AI API"
           ]}
+        />
+        <Project
+        id="MF"
+        title="My Flicks"
+        description="My first React Native project, in wich I created a movies streaming app with filtering of movies and a user sistem."
+        screenshot1={screenshot11}
+        screenshot2={screenshot12}
+        screenshot3={screenshot13}
+        linkFront="https://github.com/EServetti/My_flicks"
+        toolsUsed={["TypeScript","React Native","Firebase"]}
+        verticalImgs={true}
         />
       </div>
     </div>
