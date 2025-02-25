@@ -72,7 +72,6 @@ const Projects = () => {
           screenshot4={screenshot8}
           linkFront="https://github.com/EServetti/Find-my-books-front"
           linkBack="https://github.com/EServetti/Find-my-books"
-          linkLive="https://find-your-books.vercel.app"
           toolsUsed={[
             "Node.js with Express",
             "Database Management with MongoDB (NoSQL)",
@@ -91,7 +90,6 @@ const Projects = () => {
           screenshot2={screenshot10}
           linkFront="https://github.com/EServetti/AITrainer_front"
           linkBack="https://github.com/EServetti/AITrainer"
-          linkLive="https://ai-trainer-app.vercel.app/"
           toolsUsed={[
             "TypeScript","Node.js & Express","React","Open AI API"
           ]}
