@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="header">
-      <div className="portfolio-title">My Portfolio</div>
+      <div className="portfolio-title">Emilio Servetti</div>
     </header>
   );
 };

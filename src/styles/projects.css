@@ -14,6 +14,7 @@
   padding: 2rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+  box-shadow: 0 0 5px black;
 }
 
 .project h2 {
@@ -56,7 +57,10 @@
 }
 
 .links a {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   color: #002244;
   background-color: #d3d3d3;
   padding: 0.75rem 1.5rem;
@@ -75,6 +79,7 @@
   color: #d3d3d3;
   padding: 1.5rem;
   border-radius: 8px;
+  box-shadow: 0 0 5px black;
 }
 
 .tools-used h3 {

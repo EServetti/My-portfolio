@@ -3,16 +3,15 @@ import "../styles/contact.css";
 import githubLogo from "../assets/git-hub.png";
 import gmailLogo from "../assets/gmail-logo.png";
 import linkedinLogo from "../assets/linkedin.png"
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const {t} = useTranslation()
   return (
     <div className="contact-container">
       <section className="contact-info">
-        <h1>Contact Me</h1>
-        <p>
-          If you would like to get in touch, you can reach me through the
-          following channels:
-        </p>
+        <h1>{t("contact/title")}</h1>
+        <p>{t("contact/invitation")}</p>
         <ul>
           <li>
             <a
@@ -34,7 +33,7 @@ const Contact = () => {
             </a>
           </li>
         </ul>
-        <p>If you're not able to use these links, mail me to servettiemilio1@gmail.com</p>
+        <p>{t("contact/gmail")}</p>
       </section>
     </div>
   );

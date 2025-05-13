@@ -1,0 +1,41 @@
+{
+    "aside/home": "Home",
+    "aside/education": "Education",
+    "aside/skills": "Skills and Tools",
+    "aside/projects": "Projects",
+    "aside/contact": "Contact",
+
+     "home/title": "Welcome to my portfolio!",
+    "home/t-hero": "Hero",
+    "home/hero": "Hi! My name is Emilio Servetti, and I'm a full-stack developer with experience in a variety of projects, including websites to help you find the perfect book, create the ideal gym routine, and an app to discover great movies. One of my newest apps is SmartChef, an AI-powered recipe creation tool! Feel free to check out my work, contact me, or connect with me on LinkedIn.",
+    "home/t-about": "About",
+    "home/about": "I'm 18 years old, Argentinian, and currently studying a Higher Technical Degree in Programming at UTN Villa María. I've completed backend development courses with Node.js, SQL with MySQL, NoSQL with MongoDB, and React at Coderhouse. I've also independently learned mobile development with React Native. I also speak English at an intermediate-advanced level (approximately B2-C1).",
+    "home/t-news": "News",
+    "home/news": "SmartChef is an app that uses AI to generate recipes based on your ingredients. You can also explore global recipes, use them, and save your favorites in personalized lists. Available soon on the Google Play Store!",
+    "home/seeMore": "See more",
+
+    "education/t-uni": "University education",
+    "education/t-courses": "Courses",
+    "education/readMore": "Read more",
+    "education/t-duration": "Duration:",
+    "education/duration-months": "{{months}} months.",
+    "education/duration-years": "{{years}} years.",
+    "education/duration-hours": "{{hours}} hours.",
+    "education/t-state": "State:",
+    "education/state-inProgress": "In progress.",
+    "education/state-finished": "Finished.",
+    "education/t-startedIn": "Started in:",
+    "education/t-finishedIn": "Finished in:",
+    "education/remote": "Remote.",
+
+    "skills/t-skills": "My Skills",
+    "skills/t-tools": "Tools I use",
+    "skills/tools": "{{name}} {{yearsOfUse}} year/s of experience, used in {{proyects}} project/s.",
+
+    "projects/t-tools": "Herramientas utilizadas",
+    "projects/download-gp": "Download on Playstore",
+
+    "contact/title": "Contact me",
+    "contact/invitation": "If you would like to get in touch, you can reach me through the following channels:",
+    "contact/gmail": "If you're not able to use these links, mail me to servettiemilio1@gmail.com"
+}
