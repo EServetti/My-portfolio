@@ -1,28 +1,69 @@
 .main-skills {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.skills-tools-section {
+  flex: 1;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills-section {
+  background-image: url("../assets/teamwork-backround.jpg");
+}
+
+.tools-section {
+  background-image: url("../assets/coding-backround.jpg");
+}
+
+.skills-tools-section h1 {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0.8;
 }
 
 .skills-tools {
-    height: 100%;
-    width: 50%;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 10px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    box-sizing: border-box;
-    flex-direction: column;
-    background-color: #002244;
-    color: #d3d3d3;
-    border-right: 2px solid #d3d3d3;
-    padding: 15px;
-    gap: 10px;
-    font-size: 1.2rem;
+    flex-direction: row;
 }
 
-.skills-tools h3 {
-    width: 100%;
-    border-bottom: 2px solid #d3d3d3;
+.tools {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tools img {
+    width: 30px;
+}
+
+.tools span {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    border-bottom: 1px solid #393838;
+}
+
+.skills-tools ul {
+    font-size: 1.2rem;
 }

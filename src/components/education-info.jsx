@@ -1,4 +1,7 @@
-import locationImage from "../assets/location.png";
+import { MapPinned } from "lucide-react";
+import { useContext } from "react";
+import { useTranslation } from "react-i18next";
+import {LanguageContext} from "../context/languageContext"
 
 function EducationInfo({
   title,
@@ -13,22 +16,25 @@ function EducationInfo({
   diploma,
   linkDiploma
 }) {
+  const {t} = useTranslation()
+  const {language} = useContext(LanguageContext)
+
   return (
     <section className="college-course">
       <img className="logo" src={logo} alt="logo" />
       <section className="college-course-info">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        {link && <a href={link}>Read more.</a>}
+        <h3>{title[language]}</h3>
+        <p>{description[language]}</p>
+        {link && <a href={link}>{t("education/readMore")}</a>}
         <ul>
           <li>
-            <img className="ubication" src={locationImage} />
+            <MapPinned />
             {location}
           </li>
-          <li>Duration: {duration}</li>
-          <li>State: {state}</li>
-          {startedIn && <li>Started in: {startedIn}</li>}
-          {finishedIn && <li>Finished in: {finishedIn}</li>}
+          <li>{t("education/t-duration")} {duration}</li>
+          <li>{t("education/t-state")} {state}</li>
+          {startedIn && <li>{t("education/t-startedIn")} {startedIn}</li>}
+          {finishedIn && <li>{t("education/t-finishedIn")} {finishedIn}</li>}
         </ul>
         {diploma && (
           <>
