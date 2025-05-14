@@ -5,6 +5,7 @@ import utnDiploma from "../assets/utn-diploma.jpg"
 import coderhouseLogo from "../assets/coderhouse-logo.png"
 import coderhouseDiploma from "../assets/coderhouse-diploma.png"
 import sqlDiploma from "../assets/73e70169-d190-46af-9a89-409da26ecc89.png"
+import reactDiploma from "../assets/2ed3c39d-8397-4fb8-8990-448f1d900b9f.png"
 import { ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -98,6 +99,25 @@ const Education = () => {
       finishedIn="01/25"
       diploma={sqlDiploma}
       linkDiploma="https://pub.coderhouse.com/certificates/73e70169-d190-46af-9a89-409da26ecc89?v=1"
+      />
+      <EducationInfo 
+      title={{
+        en: "React js at Coderhouse",
+        es: "React js en Coderhouse"
+      }}
+      logo={coderhouseLogo}
+      description={{
+        en: "In this course, develop modern web applications with React. Learn to create interactive and efficient user interfaces using key components, hooks, and tools that optimize performance and user experience.",
+        es: "En este curso desarrolla aplicaciones web modernas con React. Aprende a crear interfaces de usuario interactivas y eficientes, utilizando componentes, hooks y herramientas clave que optimizan el rendimiento y la experiencia del usuario."
+      }}
+      link="https://www.coderhouse.com/ar/cursos/reactjs"
+      location={t("education/remote")}
+      duration={t("education/duration-hours",{hours: 16})}
+      startedIn="03/02/25"
+      finishedIn="07/04/25"
+      state={t("education/state-finished")}
+      diploma={reactDiploma}
+      linkDiploma="https://pub.coderhouse.com/certificates/2ed3c39d-8397-4fb8-8990-448f1d900b9f?v=1"
       />
     </div>
   );
