@@ -71,7 +71,7 @@ const Education = () => {
         en: "In this course, you will learn to develop robust, fast, and scalable backend applications by mastering data management in NoSQL databases and applying advanced techniques for communication and control of large data volumes. You will integrate authentication and authorization systems to securely manage users, using professional architectures and optimizing performance through mocks, normalization, and debugging tools like logs, debugging, and profiling. Additionally, you will explore scalability practices with clusters and Kubernetes, focusing on configuration, security, and API REST documentation.",
         es: "En este curso, aprenderás a desarrollar aplicaciones backend robustas, rápidas y escalables mediante el dominio de la gestión de datos en bases de datos NoSQL y la aplicación de técnicas avanzadas para la comunicación y el control de grandes volúmenes de datos. Integrarás sistemas de autenticación y autorización para gestionar usuarios de forma segura, utilizando arquitecturas profesionales y optimizando el rendimiento mediante simulacros, normalización y herramientas de depuración como registros, depuración y generación de perfiles. Además, explorarás prácticas de escalabilidad con clústeres y Kubernetes, centrándote en la configuración, la seguridad y la documentación REST de API."
       }}
-      link={"https://www.coderhouse.com/"}
+      link={"https://pub.coderhouse.com/legacy-certificates/66c1eefeb45e2e10098434b0?lang=es"}
       location={t("education/remote")}
       duration={t("education/duration-hours",{hours: 94})}
       state={t("education/state-finished")}
