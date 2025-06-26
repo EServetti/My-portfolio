@@ -12,21 +12,21 @@ import {
   User,
 } from "lucide-react";
 import personalPhoto from "../assets/personal-image.jpg";
-import news1 from "../assets/smartchef-2.jpg"
-import news2 from "../assets/smartchef-3.jpg"
+import news1 from "../assets/smartchef-2.jpg";
+import news2 from "../assets/smartchef-3.jpg";
 import { Link } from "react-router-dom";
 import { LanguageContext } from "../context/languageContext";
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
-  const {t} = useTranslation()
-  const {language, changeLanguage} = useContext(LanguageContext)
+  const { t } = useTranslation();
+  const { language, changeLanguage } = useContext(LanguageContext);
   const handleLanguage = (lan) => {
     if (lan === language) {
-      return
-    } 
-    changeLanguage(lan)
-  }
+      return;
+    }
+    changeLanguage(lan);
+  };
 
   const [shownScreen, setShownScreen] = useState(1);
 
@@ -42,6 +42,20 @@ const Home = () => {
       return;
     }
     setShownScreen((prevValue) => prevValue - 1);
+  }
+
+  const fechaNacimiento = new Date("2006-05-05");
+  const hoy = new Date();
+  let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+  const mesActual = hoy.getMonth();
+  const diaActual = hoy.getDate();
+  const mesNacimiento = fechaNacimiento.getMonth();
+  const diaNacimiento = fechaNacimiento.getDate();
+  if (
+    mesActual < mesNacimiento ||
+    (mesActual === mesNacimiento && diaActual < diaNacimiento)
+  ) {
+    edad--;
   }
 
   return (
@@ -91,7 +105,7 @@ const Home = () => {
                   <Brain />
                   <h1>{t("home/t-about")}</h1>
                 </span>
-                <p>{t("home/about")}</p>
+                <p>{t("home/about", { age: edad })}</p>
               </>
             ) : (
               <>
@@ -102,10 +116,13 @@ const Home = () => {
                 <section className="news-section">
                   <h1>SmartChef</h1>
                   <section className="news-body">
-                    <p>{t("home/news")}<br/> <Link to="/projects#SC">{t("home/seeMore")}</Link></p>
+                    <p>
+                      {t("home/news")}
+                      <br /> <Link to="/projects#SC">{t("home/seeMore")}</Link>
+                    </p>
                     <div className="news-screenshots">
-                      <img src={news2}/>
-                      <img src={news1}/>
+                      <img src={news2} />
+                      <img src={news1} />
                     </div>
                   </section>
                 </section>
