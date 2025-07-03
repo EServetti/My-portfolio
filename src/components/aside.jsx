@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 function Aside() {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   // mostrar una flecha en el Link a la ruta desplegada
   const location = useLocation();
   const isLocatedIn = (loc) => {
