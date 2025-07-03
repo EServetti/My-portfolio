@@ -1,6 +1,7 @@
 .aside {
     /* height: 100%; */
     width: 15vw;
+    min-width: fit-content;
     background-color: #00050a; 
     padding: 1rem; 
     display: flex;

@@ -10,7 +10,7 @@
     "home/hero": "¡Hola! Me llamo Emilio Servetti y soy programador full-stack con experiencia en diversos proyectos, como sitios web para ayudarte a encontrar el libro perfecto, crear la rutina de gimnasio ideal o una app para descubrir películas geniales. Una de mis apps más recientes es SmartChef, ¡una herramienta con IA para crear recetas! No dudes en echar un vistazo a mi trabajo, contactarme o conectar conmigo en LinkedIn.",
     "home/t-about": "Acerca de mí",
     "home/about": "Tengo {{age}} años, soy argentino y actualmente estudio la carrera de Técnico Superior en Programación en la UTN Villa María. He completado cursos de desarrollo backend con Node.js, SQL con MySQL, NoSQL con MongoDB y React en Coderhouse. Además, he aprendido desarrollo móvil de forma independiente con React Native. También hablo inglés a un nivel intermedio-avanzado (aproximadamente B2-C1).",
-    "home/t-news": "noticias",
+    "home/t-news": "Noticias",
     "home/news": "SmartChef es una app que usa IA para generar recetas basadas en tus ingredientes. También puedes explorar recetas globales, usarlas y guardar tus favoritas en listas personalizadas. ¡Ya disponible en Google Play Store!",
     "home/seeMore": "Ver más",
 
