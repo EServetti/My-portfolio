@@ -55,12 +55,14 @@
 
   .aside-button {
     position: absolute;
+    top: 0;
+    left: 0;
     background-color: white;
     display: flex;
     align-content: center;
     padding: 5px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0 0 5px 0;
     background-color: black;
     color: white;
     z-index: 1001;

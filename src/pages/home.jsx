@@ -39,7 +39,9 @@ const Home = () => {
             </span>
           </section>
         </section>
-        <Carousel/>
+        <div className="carousel-wrapper">
+          <Carousel/>
+        </div>
       </section>
     </div>
   );

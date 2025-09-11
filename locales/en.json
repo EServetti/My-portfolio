@@ -5,11 +5,11 @@
     "aside/projects": "Projects",
     "aside/contact": "Contact",
 
-     "home/title": "Welcome to my portfolio!",
+    "home/title": "Welcome to my portfolio!",
     "home/t-hero": "Hero",
     "home/hero": "Hi! My name is Emilio Servetti, and I'm a full-stack developer with experience in a variety of projects, including websites to help you find the perfect book, create the ideal gym routine, and an app to discover great movies. One of my newest apps is SmartChef, an AI-powered recipe creation tool! Feel free to check out my work, contact me, or connect with me on LinkedIn.",
     "home/t-about": "About",
-    "home/about": "I'm {{age}} years old, Argentinian, and currently studying a Higher Technical Degree in Programming at UTN Villa María. I've completed backend development courses with Node.js, SQL with MySQL, NoSQL with MongoDB, and React at Coderhouse. I've also independently learned mobile development with React Native. I also speak English at an intermediate-advanced level (approximately B2-C1).",
+    "home/about": "I'm {{age}} years old, Argentinian, and currently studying a Higher Technical Degree in Programming at UTN Villa María. I've completed backend development courses with Node.js, SQL with MySQL, NoSQL with MongoDB, and React at Coderhouse. I've also independently learned mobile development with React Native. I also speak English at an intermediate-advanced level (approximately B2-C1). I am currently working as a full-stack developer at TruentLabs",
     "home/t-news": "News",
     "home/news": "SmartChef is an app that uses AI to generate recipes based on your ingredients. You can also explore global recipes, use them, and save your favorites in personalized lists. Available now on the Google Play Store!",
     "home/seeMore": "See more",
