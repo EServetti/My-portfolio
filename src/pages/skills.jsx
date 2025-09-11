@@ -9,12 +9,14 @@ import openAILogo from "../assets/openai.png";
 import { useTranslation } from "react-i18next";
 import { useContext } from "react";
 import {LanguageContext} from "../context/languageContext";
+import useWindowsSize from "../utils/windowsSize"
 
 function Skills() {
   const { t } = useTranslation();
+  const {size} = useWindowsSize()
   const { language } = useContext(LanguageContext);
   return (
-    <div className="main-skills">
+    <div className={`${size.width < 480 ? "main-skills-small" : "main-skills"}`}>
       <section className="skills-tools-section skills-section">
         <h1>{t("skills/t-skills")}</h1>
         <div className="skills-tools">
