@@ -1,30 +1,32 @@
 import "../styles/education.css";
 import EducationInfo from "../components/education-info";
-import utnLogo from "../assets/utn-logo.png"
-import utnDiploma from "../assets/utn-diploma.jpg"
-import coderhouseLogo from "../assets/coderhouse-logo.png"
-import coderhouseDiploma from "../assets/coderhouse-diploma.png"
-import sqlDiploma from "../assets/73e70169-d190-46af-9a89-409da26ecc89.png"
-import reactDiploma from "../assets/2ed3c39d-8397-4fb8-8990-448f1d900b9f.png"
+import utnLogo from "../assets/utn-logo.png";
+import acadiumLogo from "../assets/acadium.png"
+import utnDiploma from "../assets/utn-diploma.jpg";
+import coderhouseLogo from "../assets/coderhouse-logo.png";
+import coderhouseDiploma from "../assets/coderhouse-diploma.png";
+import sqlDiploma from "../assets/73e70169-d190-46af-9a89-409da26ecc89.png";
+import reactDiploma from "../assets/2ed3c39d-8397-4fb8-8990-448f1d900b9f.png";
+import acadiumDiploma from "../assets/acadium-diploma.png"
 import { ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import ExperienceInfo from "../components/experience-info";
 
 const Education = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <div className="education-container">
       <section className="index">
         <a href="#college">
-          <ChevronRight color="white"/>
+          <ChevronRight color="white" />
           {t("education/t-uni")}
         </a>
         <a href="#courses">
-          <ChevronRight color="white"/>
+          <ChevronRight color="white" />
           {t("education/t-courses")}
         </a>
         <a href="#experience">
-          <ChevronRight color="white"/>
+          <ChevronRight color="white" />
           {t("education/t-exp")}
         </a>
       </section>
@@ -33,108 +35,127 @@ const Education = () => {
       </h3>
       <EducationInfo
         title={{
-          en: "Higher Technician in Programming at UTN", 
-          es: "Técnico superior en Programación en UTN"
+          en: "Higher Technician in Programming at UTN",
+          es: "Técnico superior en Programación en UTN",
         }}
         logo={utnLogo}
         description={{
           en: "It is an undergraduate university program that aims to train individuals with technical knowledge in the area of ​​programming. Programming is considered a fundamental branch of the development of computer systems. Currently, due to technological development and the globalization of knowledge, there is a marked growth in the use of programmable systems in commercial, industrial, and service sectors, offering graduates a rapid career path with a strong integration into the field.",
-          es: "Es una carrera universitaria de pregrado que tiene como finalidad capacitar a las personas con conocimiento técnico en área de programación. Considerando a la programación como rama fundamental en el desarrollo de los sistemas informáticos. En la actualidad, en función del desarrollo tecnológico y la globalización del conocimiento se muestra un marcado crecimiento en el uso de los sistemas programables tanto en las áreas comerciales, industriales y de servicios ofreciendo a los egresados una rápida salida laboral con una fuerte inserción en el medio."
+          es: "Es una carrera universitaria de pregrado que tiene como finalidad capacitar a las personas con conocimiento técnico en área de programación. Considerando a la programación como rama fundamental en el desarrollo de los sistemas informáticos. En la actualidad, en función del desarrollo tecnológico y la globalización del conocimiento se muestra un marcado crecimiento en el uso de los sistemas programables tanto en las áreas comerciales, industriales y de servicios ofreciendo a los egresados una rápida salida laboral con una fuerte inserción en el medio.",
         }}
         link="https://www.frvm.utn.edu.ar/oferta-academica/tecnicatura-superior-programacion"
         location="Villa María, Córdoba, Argentina."
-        duration={t("education/duration-years",{years: 2})}
+        duration={t("education/duration-years", { years: 2 })}
         state={t("education/state-inProgress")}
         startedIn="08/2024."
       />
       <h3 className="education-title" id="courses">
         {t("education/t-courses")}
       </h3>
-      <EducationInfo 
-      title={{
-        en: "Introduction to Backend programming course",
-        es: "Curso de Introducción a la Programación Backend"
-      }}
-      logo={utnLogo}
-      description={{
-        en: "An introductory course to backend programming with Node.js given by the National Technological University (UTN).",
-        es: "Curso introductorio a la programación backend con Node.js impartido por la Universidad Tecnológica Nacional (UTN)."
-      }}
-      location={t("education/remote")}
-      duration={t("education/duration-hours", {hours: 30})}
-      state={t("education/state-finished")}
-      startedIn="01/24"
-      finishedIn="03/24"
-      diploma={utnDiploma}
+      <EducationInfo
+        title={{
+          en: "Introduction to Backend programming course",
+          es: "Curso de Introducción a la Programación Backend",
+        }}
+        logo={utnLogo}
+        description={{
+          en: "An introductory course to backend programming with Node.js given by the National Technological University (UTN).",
+          es: "Curso introductorio a la programación backend con Node.js impartido por la Universidad Tecnológica Nacional (UTN).",
+        }}
+        location={t("education/remote")}
+        duration={t("education/duration-hours", { hours: 30 })}
+        state={t("education/state-finished")}
+        startedIn="01/24"
+        finishedIn="03/24"
+        diploma={utnDiploma}
       />
       <EducationInfo
-      title={{
-        en: "Backend Programming at Coderhouse",
-        es: "Programación backend en Coderhouse"
-      }}
-      logo={coderhouseLogo}
-      description={{
-        en: "In this course, you will learn to develop robust, fast, and scalable backend applications by mastering data management in NoSQL databases and applying advanced techniques for communication and control of large data volumes. You will integrate authentication and authorization systems to securely manage users, using professional architectures and optimizing performance through mocks, normalization, and debugging tools like logs, debugging, and profiling. Additionally, you will explore scalability practices with clusters and Kubernetes, focusing on configuration, security, and API REST documentation.",
-        es: "En este curso, aprenderás a desarrollar aplicaciones backend robustas, rápidas y escalables mediante el dominio de la gestión de datos en bases de datos NoSQL y la aplicación de técnicas avanzadas para la comunicación y el control de grandes volúmenes de datos. Integrarás sistemas de autenticación y autorización para gestionar usuarios de forma segura, utilizando arquitecturas profesionales y optimizando el rendimiento mediante simulacros, normalización y herramientas de depuración como registros, depuración y generación de perfiles. Además, explorarás prácticas de escalabilidad con clústeres y Kubernetes, centrándote en la configuración, la seguridad y la documentación REST de API."
-      }}
-      link={"https://www.coderhouse.com/"}
-      location={t("education/remote")}
-      duration={t("education/duration-hours",{hours: 94})}
-      state={t("education/state-finished")}
-      startedIn="03/24"
-      finishedIn="08/24"
-      diploma={coderhouseDiploma}
-      linkDiploma="https://pub.coderhouse.com/legacy-certificates/66c1eefeb45e2e10098434b0?lang=es"
+        title={{
+          en: "Backend Programming at Coderhouse",
+          es: "Programación backend en Coderhouse",
+        }}
+        logo={coderhouseLogo}
+        description={{
+          en: "In this course, you will learn to develop robust, fast, and scalable backend applications by mastering data management in NoSQL databases and applying advanced techniques for communication and control of large data volumes. You will integrate authentication and authorization systems to securely manage users, using professional architectures and optimizing performance through mocks, normalization, and debugging tools like logs, debugging, and profiling. Additionally, you will explore scalability practices with clusters and Kubernetes, focusing on configuration, security, and API REST documentation.",
+          es: "En este curso, aprenderás a desarrollar aplicaciones backend robustas, rápidas y escalables mediante el dominio de la gestión de datos en bases de datos NoSQL y la aplicación de técnicas avanzadas para la comunicación y el control de grandes volúmenes de datos. Integrarás sistemas de autenticación y autorización para gestionar usuarios de forma segura, utilizando arquitecturas profesionales y optimizando el rendimiento mediante simulacros, normalización y herramientas de depuración como registros, depuración y generación de perfiles. Además, explorarás prácticas de escalabilidad con clústeres y Kubernetes, centrándote en la configuración, la seguridad y la documentación REST de API.",
+        }}
+        link={"https://www.coderhouse.com/"}
+        location={t("education/remote")}
+        duration={t("education/duration-hours", { hours: 94 })}
+        state={t("education/state-finished")}
+        startedIn="03/24"
+        finishedIn="08/24"
+        diploma={coderhouseDiploma}
+        linkDiploma="https://pub.coderhouse.com/legacy-certificates/66c1eefeb45e2e10098434b0?lang=es"
       />
       <EducationInfo
-      title={{
-        en: "SQL at Coderhouse",
-        es: "SQL en Coderhouse"
-      }}
-      logo={coderhouseLogo}
-      description={{
-        en: "In this course you will learn the core concepts of relational databases, which are implemented by all organizations to make decisions based on the information they generate in their business model. You will create a relational database from scratch, starting with the generation of the structure to the insertion of the information, and implementing automation processes for the maintenance of the database. You will implement advanced SQL queries to generate reports and reports for decision making. At the end of the course you will be ready to analyze databases and information from any business model.",
-        es: "En este curso aprenderás los conceptos básicos de las bases de datos relacionales, las cuales son implementadas por todas las organizaciones para tomar decisiones basadas en la información que generan en su modelo de negocio. Crearás una base de datos relacional desde cero, desde la generación de la estructura hasta la inserción de la información, e implementarás procesos de automatización para el mantenimiento de la base de datos. Implementarás consultas SQL avanzadas para generar informes y reportes para la toma de decisiones. Al finalizar el curso, estarás listo para analizar bases de datos e información de cualquier modelo de negocio."
-      }}
-      link="https://www.coderhouse.com/ar/online/sql"
-      location={t("education/remote")}
-      duration={t("education/duration-hours",{hours: 24})}
-      state={t("education/state-finished")}
-      startedIn="10/24"
-      finishedIn="01/25"
-      diploma={sqlDiploma}
-      linkDiploma="https://pub.coderhouse.com/certificates/73e70169-d190-46af-9a89-409da26ecc89?v=1"
+        title={{
+          en: "SQL at Coderhouse",
+          es: "SQL en Coderhouse",
+        }}
+        logo={coderhouseLogo}
+        description={{
+          en: "In this course you will learn the core concepts of relational databases, which are implemented by all organizations to make decisions based on the information they generate in their business model. You will create a relational database from scratch, starting with the generation of the structure to the insertion of the information, and implementing automation processes for the maintenance of the database. You will implement advanced SQL queries to generate reports and reports for decision making. At the end of the course you will be ready to analyze databases and information from any business model.",
+          es: "En este curso aprenderás los conceptos básicos de las bases de datos relacionales, las cuales son implementadas por todas las organizaciones para tomar decisiones basadas en la información que generan en su modelo de negocio. Crearás una base de datos relacional desde cero, desde la generación de la estructura hasta la inserción de la información, e implementarás procesos de automatización para el mantenimiento de la base de datos. Implementarás consultas SQL avanzadas para generar informes y reportes para la toma de decisiones. Al finalizar el curso, estarás listo para analizar bases de datos e información de cualquier modelo de negocio.",
+        }}
+        link="https://www.coderhouse.com/ar/online/sql"
+        location={t("education/remote")}
+        duration={t("education/duration-hours", { hours: 24 })}
+        state={t("education/state-finished")}
+        startedIn="10/24"
+        finishedIn="01/25"
+        diploma={sqlDiploma}
+        linkDiploma="https://pub.coderhouse.com/certificates/73e70169-d190-46af-9a89-409da26ecc89?v=1"
       />
-      <EducationInfo 
-      title={{
-        en: "React js at Coderhouse",
-        es: "React js en Coderhouse"
-      }}
-      logo={coderhouseLogo}
-      description={{
-        en: "In this course, develop modern web applications with React. Learn to create interactive and efficient user interfaces using key components, hooks, and tools that optimize performance and user experience.",
-        es: "En este curso desarrolla aplicaciones web modernas con React. Aprende a crear interfaces de usuario interactivas y eficientes, utilizando componentes, hooks y herramientas clave que optimizan el rendimiento y la experiencia del usuario."
-      }}
-      link="https://www.coderhouse.com/ar/cursos/reactjs"
-      location={t("education/remote")}
-      duration={t("education/duration-hours",{hours: 16})}
-      startedIn="03/02/25"
-      finishedIn="07/04/25"
-      state={t("education/state-finished")}
-      diploma={reactDiploma}
-      linkDiploma="https://pub.coderhouse.com/certificates/2ed3c39d-8397-4fb8-8990-448f1d900b9f?v=1"
+      <EducationInfo
+        title={{
+          en: "React js at Coderhouse",
+          es: "React js en Coderhouse",
+        }}
+        logo={coderhouseLogo}
+        description={{
+          en: "In this course, develop modern web applications with React. Learn to create interactive and efficient user interfaces using key components, hooks, and tools that optimize performance and user experience.",
+          es: "En este curso desarrolla aplicaciones web modernas con React. Aprende a crear interfaces de usuario interactivas y eficientes, utilizando componentes, hooks y herramientas clave que optimizan el rendimiento y la experiencia del usuario.",
+        }}
+        link="https://www.coderhouse.com/ar/cursos/reactjs"
+        location={t("education/remote")}
+        duration={t("education/duration-hours", { hours: 16 })}
+        startedIn="03/02/25"
+        finishedIn="07/04/25"
+        state={t("education/state-finished")}
+        diploma={reactDiploma}
+        linkDiploma="https://pub.coderhouse.com/certificates/2ed3c39d-8397-4fb8-8990-448f1d900b9f?v=1"
       />
       <h3 className="education-title" id="experience">
         {t("education/t-exp")}
       </h3>
+      <EducationInfo
+        title={{
+          en: "Internship as part of the Acadium program",
+          es: "Pasantia como parte del programa de Acadium",
+        }}
+        logo={acadiumLogo}
+        description={{
+          en: "During this internship, I worked with my mentor, JD Kristenson. I worked on the HazeGray platform (JD's company) and on a project called GatherWell. For these, I used technologies such as Notion, n8n, Mongo, React, and more.",
+          es: "En esta pasantia conte con mi mentor JD Kristenson. Trabajé en la plataforma de HazeGray (empresa de JD) y en un proyecto llamado GatherWell, para estos utilizé tecnologias como Notion, n8n, Mongo, React, etc",
+        }}
+        link="https://app.acadium.com"
+        location={t("education/remote")}
+        duration={t("education/duration-months", { months: 3 })}
+        startedIn="06/20/25"
+        finishedIn="09/20/25"
+        state={t("education/state-finished")}
+        diploma={acadiumDiploma}
+        linkDiploma="https://www.credential.net/7cd650b2-c6f7-4c33-940d-68b7a2470f20#acc.6QeEcWiR"
+      />
       <ExperienceInfo
         title={{
           en: "Fullstack developer at TruentLabs",
-          es: "Desarrollador fullstack en TruentLabs"
+          es: "Desarrollador fullstack en TruentLabs",
         }}
         description={{
           es: "Puesto como desarrollador fullstack en TruentLabs trabajando en varios proyectos, usando tecnologias como Vue.js, Tailwind, Supabase, etc. Comunicación 100% en inglés.",
-          en: "Position as a fullstack developer at TruentLabs working on various projects, using technologies such as Vue.js, Tailwind, Supabase, etc. Comunication 100% in English."
+          en: "Position as a fullstack developer at TruentLabs working on various projects, using technologies such as Vue.js, Tailwind, Supabase, etc. Comunication 100% in English.",
         }}
         location={t("education/remote")}
         startedIn="07/10/25"
