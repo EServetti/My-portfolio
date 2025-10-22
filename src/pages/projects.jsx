@@ -21,6 +21,9 @@ import sc1 from "../assets/smartchef-1.jpg";
 import sc2 from "../assets/smartchef-2.jpg";
 import sc3 from "../assets/smartchef-3.jpg";
 
+import gw1 from "../assets/gw1.jpg"
+import gw2 from "../assets/gw2.png"
+
 import Project from "../components/project";
 import { ChevronRight } from "lucide-react";
 import { useLocation } from "react-router-dom";
@@ -61,6 +64,10 @@ const Projects = () => {
         <a href="#SC">
           <ChevronRight color="white" />
           SmartChef
+        </a>
+        <a href="#GW">
+          <ChevronRight color="white" />
+          GatherWell
         </a>
       </section>
       <div className="projects-container">
@@ -151,9 +158,9 @@ const Projects = () => {
           screenshot1={sc3}
           screenshot2={sc1}
           screenshot3={sc2}
-          linkGooglePlay={
-            "https://play.google.com/store/apps/details?id=com.smartchef.app"
-          }
+          // linkGooglePlay={
+          //   "https://play.google.com/store/apps/details?id=com.smartchef.app"
+          // }
           toolsUsed={[
             "TypeScript",
             "React Native",
@@ -163,6 +170,25 @@ const Projects = () => {
             "Open AI API",
           ]}
           verticalImgs={true}
+        />
+        <Project
+          id="GW"
+          title="GatherWell"
+          description={{
+            en: "A platform to create and organize parties, invite your friends, and vote on drinks, food, conversation topics, and whatever else comes to mind!",
+            es: "¡Una plataforma para crear y organizar fiestas, invitar a tus amigos y votar sobre bebidas, comida, temas de conversación y lo que se te ocurra!"
+          }}
+          screenshot1={gw1}
+          screenshot2={gw2}
+          linkLive={"https://gatherwell-adq1u.kinsta.app/"}
+          toolsUsed={[
+            "TypeScript",
+            "React",
+            "n8n",
+            "Node.js & Express",
+            "MongoDB"
+          ]}
+          verticalImgs={false}
         />
       </div>
     </div>

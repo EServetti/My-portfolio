@@ -95,7 +95,7 @@ const Carousel = () => {
                 <h1>SmartChef</h1>
                 <p>
                   {t("home/news")}
-                  <br /> <Link to="/projects#SC">{t("home/seeMore")}</Link>
+                  {/* <br /> <Link to="/projects#SC">{t("home/seeMore")}</Link> */}
                 </p>
               </section>
               {size.width > 1000 && (
