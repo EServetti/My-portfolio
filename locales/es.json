@@ -1,6 +1,6 @@
 {
     "aside/home": "Hogar",
-    "aside/education": "Educación",
+    "aside/education": "Educación y Experiencia",
     "aside/skills": "Habilidades",
     "aside/projects": "Proyectos",
     "aside/contact": "Contacto",
@@ -16,6 +16,7 @@
 
     "education/t-uni": "Educación universitaria",
     "education/t-courses": "Cursos",
+    "education/t-exp": "Experiencia",
     "education/readMore": "Leer más",
     "education/t-duration": "Duración:",
     "education/duration-months": "{{months}} meses.",
@@ -30,7 +31,13 @@
 
     "skills/t-skills": "Mis habilidades",
     "skills/t-tools": "Herramientas que manejo",
-    "skills/tools": "{{name}} {{yearsOfUse}} año/s de experiencia, usado en {{proyects}} proyecto/s.",
+    "skills/tools": "{{name}} {{yearsOfUse}} de experiencia, usado en {{proyects}}.",
+    "skills/month": "mes",
+    "skills/months": "meses",
+    "skills/year": "año",
+    "skills/years": "años",
+    "skills/project": "proyecto",
+    "skills/projects": "proyectos",
 
     "projects/t-tools": "Herramientas utilizadas",
     "projects/download-gp": "Descargar en Playstore",

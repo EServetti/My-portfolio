@@ -151,9 +151,9 @@ const Projects = () => {
           screenshot1={sc3}
           screenshot2={sc1}
           screenshot3={sc2}
-          linkGooglePlay={
-            "https://play.google.com/store/apps/details?id=com.smartchef.app"
-          }
+          // linkGooglePlay={
+          //   "https://play.google.com/store/apps/details?id=com.smartchef.app"
+          // }
           toolsUsed={[
             "TypeScript",
             "React Native",

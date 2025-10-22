@@ -8,6 +8,7 @@ import sqlDiploma from "../assets/73e70169-d190-46af-9a89-409da26ecc89.png"
 import reactDiploma from "../assets/2ed3c39d-8397-4fb8-8990-448f1d900b9f.png"
 import { ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import ExperienceInfo from "../components/experience-info";
 
 const Education = () => {
   const {t} = useTranslation()
@@ -21,6 +22,10 @@ const Education = () => {
         <a href="#courses">
           <ChevronRight color="white"/>
           {t("education/t-courses")}
+        </a>
+        <a href="#experience">
+          <ChevronRight color="white"/>
+          {t("education/t-exp")}
         </a>
       </section>
       <h3 className="education-title" id="college">
@@ -118,6 +123,21 @@ const Education = () => {
       state={t("education/state-finished")}
       diploma={reactDiploma}
       linkDiploma="https://pub.coderhouse.com/certificates/2ed3c39d-8397-4fb8-8990-448f1d900b9f?v=1"
+      />
+      <h3 className="education-title" id="experience">
+        {t("education/t-exp")}
+      </h3>
+      <ExperienceInfo
+        title={{
+          en: "Fullstack developer at TruentLabs",
+          es: "Desarrollador fullstack en TruentLabs"
+        }}
+        description={{
+          es: "Puesto como desarrollador fullstack en TruentLabs trabajando en varios proyectos, usando tecnologias como Vue.js, Tailwind, Supabase, etc. Comunicación 100% en inglés.",
+          en: "Position as a fullstack developer at TruentLabs working on various projects, using technologies such as Vue.js, Tailwind, Supabase, etc. Comunication 100% in English."
+        }}
+        location={t("education/remote")}
+        startedIn="07/10/25"
       />
     </div>
   );
