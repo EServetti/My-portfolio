@@ -16,7 +16,7 @@
 
     "education/t-uni": "University education",
     "education/t-courses": "Courses",
-        "education/t-exp": "Experience",
+    "education/t-exp": "Experience",
     "education/readMore": "Read more",
     "education/t-duration": "Duration:",
     "education/duration-months": "{{months}} months.",
